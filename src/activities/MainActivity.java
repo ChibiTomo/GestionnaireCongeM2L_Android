@@ -9,12 +9,16 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 
 		init();
-		Intent intent = new Intent(this, Login.class);
+		Intent intent;
+		if (getGateway().isLogged()) {
+			intent = new Intent(this, Summary.class);
+		} else {
+			intent = new Intent(this, Login.class);
+		}
 		startActivity(intent);
 	}
 
 	private void init() {
 		// TODO Auto-generated method stub
-
 	}
 }

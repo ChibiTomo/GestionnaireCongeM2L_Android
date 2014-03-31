@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 
 public abstract class Activity extends android.app.Activity {
-	private static final String EXTRA_GATEWAY = "net.thomiasyannis.gestionnairecongem2l.GATEWAY";
-	private static final Gateway.TYPE TYPE = Gateway.TYPE.JSON;
+	protected static final String EXTRA_GATEWAY = "net.thomiasyannis.gestionnairecongem2l.GATEWAY";
+	protected static final String EXTRA_EMPLOYEE = "net.thomiasyannis.gestionnairecongem2l.EMPLOYEE";
+
+	private static final Gateway.TYPE GATEWAY_TYPE = Gateway.TYPE.JSON;
 	private Gateway gateway;
 
 	@Override
@@ -15,13 +17,17 @@ public abstract class Activity extends android.app.Activity {
 		Intent intend = getIntent();
 		gateway = (Gateway) intend.getSerializableExtra(EXTRA_GATEWAY);
 		if (gateway == null) {
-			gateway = Gateway.getGateway(TYPE);
+			gateway = Gateway.getGateway(GATEWAY_TYPE);
 		}
 	}
 
 	@Override
 	public void startActivity(Intent intent) {
-		intent.putExtra(EXTRA_GATEWAY, this.gateway);
+		intent.putExtra(EXTRA_GATEWAY, gateway);
 		super.startActivity(intent);
+	}
+
+	public Gateway getGateway() {
+		return gateway;
 	}
 }

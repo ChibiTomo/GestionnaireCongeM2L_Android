@@ -9,5 +9,5 @@
 	    android:layout_height="wrap_content"
 	    android:textColor="#00FF00"
 	    android:typeface="monospace"
-	    android:text="HelloWorld" />
+	    android:text="I'm the login layout!!!" />
 </LinearLayout>

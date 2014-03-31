@@ -1,140 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.1.4" icons="true" automaticImage="JPEG" always-add-relationships="true" generalizations="true" 
+<class-diagram version="1.1.5" icons="true" automaticImage="JPEG" always-add-relationships="true" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
-  <class id="1" language="java" name="activities.Login" project="GestionnaireCongeM2L" 
-    file="/GestionnaireCongeM2L/src/activities/Login.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="134" x="301" y="212"/>    
+  <class id="1" language="java" name="gateway.JSON" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/gateway/JSON.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="943" y="261"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="activities.Activity" project="GestionnaireCongeM2L" 
-    file="/GestionnaireCongeM2L/src/activities/Activity.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="151" x="475" y="37"/>    
+  <class id="2" language="java" name="gateway.SOAP" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/gateway/SOAP.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="945" y="85"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="activities.MainActivity" project="GestionnaireCongeM2L" 
-    file="/GestionnaireCongeM2L/src/activities/MainActivity.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="134" x="475" y="212"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
-      visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="false" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="gateway.Gateway" project="GestionnaireCongeM2L" 
-    file="/GestionnaireCongeM2L/src/gateway/Gateway.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="168" x="93" y="212"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
-      visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="false" static="true"/>    
-    </display>  
-  </class>  
-  <enumeration id="5" language="java" name="gateway.Gateway.TYPE" project="GestionnaireCongeM2L" 
-    file="/GestionnaireCongeM2L/src/gateway/Gateway.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="119" x="511" y="387"/>    
+  <enumeration id="3" language="java" name="gateway.Gateway.TYPE" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/gateway/Gateway.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="519" y="67"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="false" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="6" language="java" name="gateway.JSON" project="GestionnaireCongeM2L" 
-    file="/GestionnaireCongeM2L/src/gateway/JSON.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="131" x="42" y="387"/>    
+  <class id="4" language="java" name="gateway.Gateway" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/gateway/Gateway.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="705" y="137"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="gateway.SOAP" project="GestionnaireCongeM2L" 
-    file="/GestionnaireCongeM2L/src/gateway/SOAP.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="131" x="340" y="387"/>    
+  <class id="5" language="java" name="data.Conge" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/data/Conge.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="391" y="467"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="data.Conge" project="GestionnaireCongeM2L" 
-    file="/GestionnaireCongeM2L/src/data/Conge.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="87" x="213" y="544"/>    
+  <class id="6" language="java" name="activities.MainActivity" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/activities/MainActivity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="74" y="238"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="data.Employee" project="GestionnaireCongeM2L" 
-    file="/GestionnaireCongeM2L/src/data/Employee.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="87" x="213" y="387"/>    
+  <class id="7" language="java" name="data.Employee" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/data/Employee.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="697" y="413"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="false" static="true"/>    
     </display>  
   </class>  
-  <nesting id="10">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="5"/>  
-  </nesting>  
-  <association id="11">    
-    <bendpoint x="639" y="212"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="12" name="TYPE"/>      
-      <multiplicity id="13" minimum="0" maximum="1"/>    
+  <class id="8" language="java" name="activities.Activity" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/activities/Activity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="266" y="80"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="activities.Login" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/activities/Login.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="241" y="242"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="10" language="java" name="data.Conge.Status" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/data/Conge.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="123" y="462"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="11" language="java" name="data.Solde" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/data/Solde.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1040" y="502"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="12" language="java" name="data.Type" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/data/Type.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="701" y="593"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="13" language="java" name="activities.Demands" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/activities/Demands.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="53" y="48"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="activities.Summary" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/activities/Summary.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="364" y="236"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="activities.NewDemand" project="GestionnaireCongeM2L_Android" 
+    file="/GestionnaireCongeM2L_Android/src/activities/NewDemand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="57" y="139"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="16">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <association id="17">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="18" name="employee"/>      
+      <multiplicity id="19" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="14">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <association id="15">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="16" name="gateway"/>      
-      <multiplicity id="17" minimum="0" maximum="1"/>    
+  <association id="20">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="21" name="soldes"/>      
+      <multiplicity id="22" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="23">    
+    <bendpoint x="444" y="170"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="24" name="gateway"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="18">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
+  <association id="26">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="27" name="type"/>      
+      <multiplicity id="28" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="29">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="10"/>  
+  </nesting>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="8"/>  
   </generalization>  
-  <generalization id="19">    
-    <end type="SOURCE" refId="7"/>    
+  <association id="31">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="32" name="conges"/>      
+      <multiplicity id="33" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="34">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="35">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <nesting id="36">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <association id="37">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="38" name="type"/>      
+      <multiplicity id="39" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="40">    
+    <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
-  <generalization id="20">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <association id="21">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="22" name="conges"/>      
-      <multiplicity id="23" minimum="0" maximum="2147483647"/>    
+  <association id="41">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="42" name="GATEWAY_TYPE"/>      
+      <multiplicity id="43" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="24">    
+  <association id="44">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="25" name="employee"/>      
-      <multiplicity id="26" minimum="0" maximum="1"/>    
+      <attribute id="45" name="employee"/>      
+      <multiplicity id="46" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="47">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="48" name="status"/>      
+      <multiplicity id="49" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="50">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="51">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
