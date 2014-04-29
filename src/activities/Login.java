@@ -5,6 +5,8 @@ import net.yannisthomias.gestionnairecongem2l.R;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class Login extends Activity {
 	@Override
@@ -14,16 +16,21 @@ public class Login extends Activity {
 	}
 
 	public void authenticate(View view) {
-		// TODO: Get login and password.
-		String login = null;
-		String password = null;
+		EditText loginView = (EditText) findViewById(R.id.login);
+		String login = loginView.getText().toString();
+		EditText pwdView = (EditText) findViewById(R.id.password);
+		String password = pwdView.getText().toString();
 		Gateway gateway = getGateway();
+		gateway.authenticate(login, password);
 		if (gateway.authenticate(login, password)) {
-			Intent intent = new Intent(this, Summary.class);
-			intent.putExtra(EXTRA_EMPLOYEE, gateway.getEmployee());
+			gateway.saveLocal();
+			Intent intent = new Intent(this, StartActivity.class);
+			finish();
 			startActivity(intent);
 		} else {
-			// TODO: Not connected. error message.
+			TextView errorView = (TextView) findViewById(R.id.errorMessage);
+			errorView.setText(gateway.getErrorMessage());
+			gateway.clearError();
 		}
 	}
 }

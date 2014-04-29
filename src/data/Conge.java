@@ -6,10 +6,7 @@ import java.util.Date;
 public class Conge implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	enum Status {
-		ACCEPTED, REFUSED, PENDING;
-	}
-
+	Integer id;
 	private Type type;
 	private Status status;
 	private Date start;
@@ -30,7 +27,7 @@ public class Conge implements Serializable {
 
 	public double getAmount(Date start, Date end) {
 		double amount = end.getTime() - start.getTime();
-		amount /= 1000 * 60 * 60 * 24; // convert millisecond to day
+		amount /= 60 * 60 * 24 * 1000; // convert millisecond to day
 		return Math.ceil(amount * 100) / 100;
 	}
 
@@ -55,6 +52,7 @@ public class Conge implements Serializable {
 			return;
 		}
 		Date end = getEnd();
+		@SuppressWarnings("deprecation")
 		int year = start.getYear() + 1900;
 		if (end != null
 				&& (start.compareTo(end) > 0 || !employee.hasEnought(year,
@@ -74,6 +72,7 @@ public class Conge implements Serializable {
 			return;
 		}
 		Date start = getEnd();
+		@SuppressWarnings("deprecation")
 		int year = end.getYear() + 1900;
 		if (start != null
 				&& (start.compareTo(end) > 0 || !employee.hasEnought(year,
@@ -86,5 +85,43 @@ public class Conge implements Serializable {
 
 	public Date getEnd() {
 		return end;
+	}
+
+	public Integer getID() {
+		return id;
+	}
+
+	void setID(Integer id) {
+		this.id = id;
+	}
+
+	public void delete() {
+		employee.remove(this);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof Conge)) {
+			return false;
+		}
+		Conge c = (Conge) obj;
+
+		boolean isIDCorrect = false;
+		if (id == null && c.id == null) {
+			isIDCorrect = true;
+		} else if (id != null && c.id != null && id.equals(c.id)) {
+			isIDCorrect = true;
+		}
+		return isIDCorrect && type.compareTo(c.type) == 0
+				&& end.getTime() == c.end.getTime()
+				&& start.getTime() == c.start.getTime()
+				&& employee.equals(c.employee);
+	}
+
+	@Override
+	public String toString() {
+		return "Conge { id:" + id + ", type: " + type + ", status: " + status
+				+ ", start: " + start.getTime() + ", end: " + end.getTime()
+				+ ", employee: " + employee + " }";
 	}
 }

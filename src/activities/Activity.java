@@ -1,6 +1,10 @@
 package activities;
 
 import gateway.Gateway;
+
+import java.io.File;
+
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -15,9 +19,15 @@ public abstract class Activity extends android.app.Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Intent intend = getIntent();
+
+		Context context = getApplicationContext();
 		gateway = (Gateway) intend.getSerializableExtra(EXTRA_GATEWAY);
 		if (gateway == null) {
-			gateway = Gateway.getGateway(GATEWAY_TYPE);
+			gateway = Gateway.loadLocal(context.getFilesDir() + File.separator);
+		}
+		if (gateway == null) {
+			gateway = Gateway.createGateway(GATEWAY_TYPE);
+			gateway.setRootDir(context.getFilesDir().getAbsolutePath());
 		}
 	}
 

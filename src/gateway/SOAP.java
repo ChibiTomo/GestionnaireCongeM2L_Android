@@ -22,4 +22,10 @@ class SOAP extends Gateway {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+	@Override
+	public boolean refresh() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

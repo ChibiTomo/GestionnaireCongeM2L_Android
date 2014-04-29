@@ -2,4 +2,22 @@
 
     <string name="app_name">GestionnaireCongeM2L</string>
 
+    <string name="password">Mot de passe</string>
+
+    <string name="login">Identifiant</string>
+
+    <string name="signin">Connexion</string>
+
+    <string name="welcome">"Bienvenue "</string>
+
+    <string name="logout">Déconnexion</string>
+
+    <string name="leave">Quitter</string>
+
+    <string name="myDemands">Mes demandes</string>
+
+    <string name="newDemand">Faire une demande</string>
+
+    <string name="summary">Résumé</string>
+
 </resources>

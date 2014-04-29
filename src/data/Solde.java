@@ -2,17 +2,19 @@ package data;
 
 import java.io.Serializable;
 
-class Solde implements Serializable {
+public class Solde implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Type type;
 	private int year;
 	private int amount;
+	private Employee employee;
 
-	public Solde(Type type, int year, int amount) {
+	Solde(Type type, Integer year, Integer amount, Employee employee) {
 		this.type = type;
 		this.year = year;
 		this.amount = amount;
+		this.employee = employee;
 	}
 
 	public Type getType() {
@@ -25,6 +27,10 @@ class Solde implements Serializable {
 
 	public int getAmount() {
 		return amount;
+	}
+
+	public Employee getEmployee() {
+		return employee;
 	}
 
 	@Override
